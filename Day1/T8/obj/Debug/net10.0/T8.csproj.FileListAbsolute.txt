@@ -1,0 +1,15 @@
+/home/zontk/RiderProjects/Day1/T8/bin/Debug/net10.0/T8
+/home/zontk/RiderProjects/Day1/T8/bin/Debug/net10.0/T8.deps.json
+/home/zontk/RiderProjects/Day1/T8/bin/Debug/net10.0/T8.runtimeconfig.json
+/home/zontk/RiderProjects/Day1/T8/bin/Debug/net10.0/T8.dll
+/home/zontk/RiderProjects/Day1/T8/bin/Debug/net10.0/T8.pdb
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.GeneratedMSBuildEditorConfig.editorconfig
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.AssemblyInfoInputs.cache
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.AssemblyInfo.cs
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.csproj.CoreCompileInputs.cache
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.sourcelink.json
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.dll
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/refint/T8.dll
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.pdb
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/T8.genruntimeconfig.cache
+/home/zontk/RiderProjects/Day1/T8/obj/Debug/net10.0/ref/T8.dll

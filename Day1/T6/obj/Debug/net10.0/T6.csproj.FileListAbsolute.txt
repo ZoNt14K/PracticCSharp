@@ -1,0 +1,15 @@
+/home/zontk/RiderProjects/Day1/T6/bin/Debug/net10.0/T6
+/home/zontk/RiderProjects/Day1/T6/bin/Debug/net10.0/T6.deps.json
+/home/zontk/RiderProjects/Day1/T6/bin/Debug/net10.0/T6.runtimeconfig.json
+/home/zontk/RiderProjects/Day1/T6/bin/Debug/net10.0/T6.dll
+/home/zontk/RiderProjects/Day1/T6/bin/Debug/net10.0/T6.pdb
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.GeneratedMSBuildEditorConfig.editorconfig
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.AssemblyInfoInputs.cache
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.AssemblyInfo.cs
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.csproj.CoreCompileInputs.cache
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.sourcelink.json
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.dll
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/refint/T6.dll
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.pdb
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/T6.genruntimeconfig.cache
+/home/zontk/RiderProjects/Day1/T6/obj/Debug/net10.0/ref/T6.dll

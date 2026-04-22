@@ -1,0 +1,15 @@
+/home/zontk/RiderProjects/Day1/T9/bin/Debug/net10.0/T9
+/home/zontk/RiderProjects/Day1/T9/bin/Debug/net10.0/T9.deps.json
+/home/zontk/RiderProjects/Day1/T9/bin/Debug/net10.0/T9.runtimeconfig.json
+/home/zontk/RiderProjects/Day1/T9/bin/Debug/net10.0/T9.dll
+/home/zontk/RiderProjects/Day1/T9/bin/Debug/net10.0/T9.pdb
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.GeneratedMSBuildEditorConfig.editorconfig
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.AssemblyInfoInputs.cache
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.AssemblyInfo.cs
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.csproj.CoreCompileInputs.cache
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.sourcelink.json
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.dll
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/refint/T9.dll
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.pdb
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/T9.genruntimeconfig.cache
+/home/zontk/RiderProjects/Day1/T9/obj/Debug/net10.0/ref/T9.dll

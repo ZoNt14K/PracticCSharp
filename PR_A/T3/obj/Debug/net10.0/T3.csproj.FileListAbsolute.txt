@@ -1,0 +1,14 @@
+/home/zontk/RiderProjects/PR_A/T3/bin/Debug/net10.0/T3
+/home/zontk/RiderProjects/PR_A/T3/bin/Debug/net10.0/T3.deps.json
+/home/zontk/RiderProjects/PR_A/T3/bin/Debug/net10.0/T3.runtimeconfig.json
+/home/zontk/RiderProjects/PR_A/T3/bin/Debug/net10.0/T3.dll
+/home/zontk/RiderProjects/PR_A/T3/bin/Debug/net10.0/T3.pdb
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.GeneratedMSBuildEditorConfig.editorconfig
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.AssemblyInfoInputs.cache
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.AssemblyInfo.cs
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.csproj.CoreCompileInputs.cache
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.dll
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/refint/T3.dll
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.pdb
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/T3.genruntimeconfig.cache
+/home/zontk/RiderProjects/PR_A/T3/obj/Debug/net10.0/ref/T3.dll

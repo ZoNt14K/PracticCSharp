@@ -1,0 +1,15 @@
+/home/zontk/RiderProjects/Day1/T10/bin/Debug/net10.0/T10
+/home/zontk/RiderProjects/Day1/T10/bin/Debug/net10.0/T10.deps.json
+/home/zontk/RiderProjects/Day1/T10/bin/Debug/net10.0/T10.runtimeconfig.json
+/home/zontk/RiderProjects/Day1/T10/bin/Debug/net10.0/T10.dll
+/home/zontk/RiderProjects/Day1/T10/bin/Debug/net10.0/T10.pdb
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.GeneratedMSBuildEditorConfig.editorconfig
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.AssemblyInfoInputs.cache
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.AssemblyInfo.cs
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.csproj.CoreCompileInputs.cache
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.sourcelink.json
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.dll
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/refint/T10.dll
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.pdb
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/T10.genruntimeconfig.cache
+/home/zontk/RiderProjects/Day1/T10/obj/Debug/net10.0/ref/T10.dll

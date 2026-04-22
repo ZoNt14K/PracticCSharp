@@ -1,0 +1,15 @@
+/home/zontk/RiderProjects/Day1/T2/bin/Debug/net10.0/T2
+/home/zontk/RiderProjects/Day1/T2/bin/Debug/net10.0/T2.deps.json
+/home/zontk/RiderProjects/Day1/T2/bin/Debug/net10.0/T2.runtimeconfig.json
+/home/zontk/RiderProjects/Day1/T2/bin/Debug/net10.0/T2.dll
+/home/zontk/RiderProjects/Day1/T2/bin/Debug/net10.0/T2.pdb
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.GeneratedMSBuildEditorConfig.editorconfig
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.AssemblyInfoInputs.cache
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.AssemblyInfo.cs
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.csproj.CoreCompileInputs.cache
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.sourcelink.json
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.dll
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/refint/T2.dll
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.pdb
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/T2.genruntimeconfig.cache
+/home/zontk/RiderProjects/Day1/T2/obj/Debug/net10.0/ref/T2.dll
