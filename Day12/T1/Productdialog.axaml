@@ -1,0 +1,126 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="T1.ProductDialog"
+        Title="Товар"
+        Width="420" Height="440"
+        WindowStartupLocation="CenterOwner"
+        CanResize="False"
+        Background="#1E1E2E">
+
+    <Window.Styles>
+        <Style Selector="TextBlock.label">
+            <Setter Property="Foreground" Value="#A0A0C0"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="0,0,0,4"/>
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="Background" Value="#2A2A3E"/>
+            <Setter Property="Foreground" Value="#E0E0F0"/>
+            <Setter Property="BorderBrush" Value="#3A3A5C"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="Margin" Value="0,0,0,14"/>
+        </Style>
+        <Style Selector="ComboBox">
+            <Setter Property="Background" Value="#2A2A3E"/>
+            <Setter Property="Foreground" Value="#E0E0F0"/>
+            <Setter Property="BorderBrush" Value="#3A3A5C"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="8,6"/>
+            <Setter Property="CornerRadius" Value="6"/>
+            <Setter Property="Margin" Value="0,0,0,14"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+        <Style Selector="Button.primary">
+            <Setter Property="Background" Value="#5B5BF0"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="24,10"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style Selector="Button.secondary">
+            <Setter Property="Background" Value="#2A2A3E"/>
+            <Setter Property="Foreground" Value="#A0A0C0"/>
+            <Setter Property="Padding" Value="24,10"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderBrush" Value="#3A3A5C"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Styles>
+
+    <Grid Margin="28">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0"
+                   x:Name="DialogTitle"
+                   Text="Добавить товар"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="#E0E0F0"
+                   Margin="0,0,0,24"/>
+
+        <!-- Поля формы -->
+        <StackPanel Grid.Row="1">
+            <TextBlock Classes="label" Text="Наименование *"/>
+            <TextBox x:Name="NameBox" PlaceholderText="Введите название товара"/>
+
+            <Grid ColumnDefinitions="*,12,*">
+                <StackPanel Grid.Column="0">
+                    <TextBlock Classes="label" Text="Категория *"/>
+                    <ComboBox x:Name="CategoryBox">
+                        <ComboBoxItem>Электроника</ComboBoxItem>
+                        <ComboBoxItem>Продукты</ComboBoxItem>
+                        <ComboBoxItem>Одежда</ComboBoxItem>
+                        <ComboBoxItem>Инструменты</ComboBoxItem>
+                        <ComboBoxItem>Стройматериалы</ComboBoxItem>
+                        <ComboBoxItem>Другое</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBlock Classes="label" Text="Ед. измерения *"/>
+                    <ComboBox x:Name="UnitBox">
+                        <ComboBoxItem>шт</ComboBoxItem>
+                        <ComboBoxItem>кг</ComboBoxItem>
+                        <ComboBoxItem>л</ComboBoxItem>
+                        <ComboBoxItem>м</ComboBoxItem>
+                        <ComboBoxItem>уп</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Grid>
+
+            <Grid ColumnDefinitions="*,12,*">
+                <StackPanel Grid.Column="0">
+                    <TextBlock Classes="label" Text="Количество *"/>
+                    <TextBox x:Name="QuantityBox" PlaceholderText="0"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2">
+                    <TextBlock Classes="label" Text="Цена (₽) *"/>
+                    <TextBox x:Name="PriceBox" PlaceholderText="0.00"/>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Classes="label" Text="Описание"/>
+            <TextBox x:Name="DescriptionBox"
+                     PlaceholderText="Дополнительная информация..."
+                     Height="70"
+                     AcceptsReturn="True"
+                     TextWrapping="Wrap"/>
+        </StackPanel>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Spacing="12"
+                    Margin="0,16,0,0">
+            <Button Classes="secondary" Content="Отмена" Click="OnCancel"/>
+            <Button Classes="primary" Content="Сохранить" Click="OnSave"/>
+        </StackPanel>
+    </Grid>
+</Window>

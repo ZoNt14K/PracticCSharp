@@ -1,0 +1,125 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:T1"
+        x:Class="T1.MainWindow"
+        Title="АРМ Работника Склада"
+        Width="960" Height="600"
+        MinWidth="700" MinHeight="400"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E1E">
+
+    <DockPanel>
+
+        <!-- Панель инструментов -->
+        <Border DockPanel.Dock="Top"
+                Background="#2D2D2D"
+                Padding="10,8"
+                BorderBrush="#444"
+                BorderThickness="0,0,0,1">
+            <Grid ColumnDefinitions="Auto,*,Auto,12,Auto,12,Auto">
+
+                <!-- Кнопки -->
+                <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="6">
+                    <Button Content="Добавить"  Click="OnAdd"
+                            Background="#0078D4" Foreground="White"
+                            Padding="12,6" CornerRadius="4"/>
+                    <Button Content="Изменить"  Click="OnEdit"
+                            Background="#3A3A3A" Foreground="#DDD"
+                            Padding="12,6" CornerRadius="4"/>
+                    <Button Content="Удалить"   Click="OnDelete"
+                            Background="#3A3A3A" Foreground="#E07070"
+                            Padding="12,6" CornerRadius="4"/>
+                </StackPanel>
+
+                <!-- Статистика -->
+                <TextBlock Grid.Column="2" x:Name="TotalCountText"
+                           Text="Позиций: 0"
+                           Foreground="#AAA" FontSize="13"
+                           VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="4" x:Name="TotalSumText"
+                           Text="Сумма: 0 ₽"
+                           Foreground="#AAA" FontSize="13"
+                           VerticalAlignment="Center"/>
+
+                <!-- Поиск -->
+                <TextBox Grid.Column="6" x:Name="SearchBox"
+                         PlaceholderText="Поиск..."
+                         Width="220"
+                         Background="#3A3A3A"
+                         Foreground="White"
+                         BorderBrush="#555"
+                         Padding="8,5"
+                         CornerRadius="4"
+                         TextChanged="OnSearchChanged"/>
+            </Grid>
+        </Border>
+
+        <!-- Фильтр по категории -->
+        <Border DockPanel.Dock="Top"
+                Background="#252525"
+                Padding="10,6"
+                BorderBrush="#383838"
+                BorderThickness="0,0,0,1">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <TextBlock Text="Категория:" Foreground="#888"
+                           FontSize="12" VerticalAlignment="Center"/>
+                <ComboBox x:Name="CategoryFilter"
+                          Background="#3A3A3A" Foreground="White"
+                          BorderBrush="#555" Padding="8,4"
+                          SelectionChanged="OnFilterChanged">
+                    <ComboBoxItem IsSelected="True">Все</ComboBoxItem>
+                    <ComboBoxItem>Электроника</ComboBoxItem>
+                    <ComboBoxItem>Продукты</ComboBoxItem>
+                    <ComboBoxItem>Одежда</ComboBoxItem>
+                    <ComboBoxItem>Инструменты</ComboBoxItem>
+                    <ComboBoxItem>Стройматериалы</ComboBoxItem>
+                    <ComboBoxItem>Другое</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </Border>
+
+        <!-- Статус-бар -->
+        <Border DockPanel.Dock="Bottom"
+                Background="#252525"
+                Padding="10,5"
+                BorderBrush="#383838"
+                BorderThickness="0,1,0,0">
+            <Grid ColumnDefinitions="*,Auto">
+                <TextBlock x:Name="StatusText" Grid.Column="0"
+                           Text="Готово" Foreground="#666"
+                           FontSize="12" VerticalAlignment="Center"/>
+                <TextBlock x:Name="SelectionText" Grid.Column="1"
+                           Foreground="#666" FontSize="12"
+                           VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <!-- DataGrid -->
+        <DataGrid x:Name="ProductGrid"
+                  x:DataType="local:ProductViewModel"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  CanUserSortColumns="True"
+                  CanUserResizeColumns="True"
+                  Background="#1E1E1E"
+                  RowBackground="#1E1E1E"
+                  Foreground="#DDD"
+                  BorderThickness="0"
+                  GridLinesVisibility="Horizontal"
+                  HorizontalGridLinesBrush="#333"
+                  FontSize="13">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"           Binding="{Binding Id}"       Width="55"/>
+                <DataGridTextColumn Header="Наименование" Binding="{Binding Name}"     Width="*"/>
+                <DataGridTextColumn Header="Категория"    Binding="{Binding Category}" Width="130"/>
+                <DataGridTextColumn Header="Кол-во"       Binding="{Binding Quantity}" Width="75"/>
+                <DataGridTextColumn Header="Ед."          Binding="{Binding Unit}"     Width="55"/>
+                <DataGridTextColumn Header="Цена"         Binding="{Binding Price, StringFormat={}{0:F2} ₽}"      Width="105"/>
+                <DataGridTextColumn Header="Сумма"        Binding="{Binding TotalValue, StringFormat={}{0:F2} ₽}" Width="115"/>
+                <DataGridTextColumn Header="Описание"     Binding="{Binding Description}" Width="180"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </DockPanel>
+</Window>
