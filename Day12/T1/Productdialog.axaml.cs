@@ -18,20 +18,17 @@ public partial class ProductDialog : Window
 
         if (product != null)
         {
-            // Режим редактирования
             DialogTitle.Text = "Редактировать товар";
             NameBox.Text = product.Name;
             QuantityBox.Text = product.Quantity.ToString();
             PriceBox.Text = product.Price.ToString("F2");
             DescriptionBox.Text = product.Description;
-
-            // Установка ComboBox по значению
+            
             SetComboBoxByContent(CategoryBox, product.Category);
             SetComboBoxByContent(UnitBox, product.Unit);
         }
         else
         {
-            // Значения по умолчанию
             CategoryBox.SelectedIndex = 0;
             UnitBox.SelectedIndex = 0;
         }
@@ -52,7 +49,6 @@ public partial class ProductDialog : Window
 
     private void OnSave(object? sender, RoutedEventArgs e)
     {
-        // Валидация
         if (string.IsNullOrWhiteSpace(NameBox.Text))
         {
             ShowError("Введите наименование товара.");
@@ -130,7 +126,6 @@ public partial class ProductDialog : Window
             }
         };
 
-        // Кнопка OK закрывает диалог
         var btn = ((StackPanel)dialog.Content).Children[1] as Button;
         btn!.Click += (_, _) => dialog.Close();
 

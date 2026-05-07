@@ -9,10 +9,8 @@ namespace T1;
 
 public partial class MainWindow : Window
 {
-    // Все товары
     private readonly List<Product> _allProducts = new();
 
-    // Отображаемые товары (после фильтрации)
     private readonly ObservableCollection<ProductViewModel> _displayProducts = new();
 
     private int _nextId = 1;
@@ -24,7 +22,6 @@ public partial class MainWindow : Window
         ProductGrid.ItemsSource = _displayProducts;
         ProductGrid.SelectionChanged += (_, _) => UpdateStatusBar();
 
-        // Демо-данные
         LoadDemoData();
         RefreshGrid();
     }
@@ -52,7 +49,6 @@ public partial class MainWindow : Window
         }
     }
 
-    // ─── Добавить ────────────────────────────────────────────────────────────
 
     private async void OnAdd(object? sender, RoutedEventArgs e)
     {
@@ -67,8 +63,6 @@ public partial class MainWindow : Window
             SetStatus($"Товар «{dialog.Result.Name}» добавлен.");
         }
     }
-
-    // ─── Редактировать ───────────────────────────────────────────────────────
 
     private async void OnEdit(object? sender, RoutedEventArgs e)
     {
@@ -85,7 +79,6 @@ public partial class MainWindow : Window
 
         if (result && dialog.Result != null)
         {
-            // Обновляем оригинальный объект
             original.Name        = dialog.Result.Name;
             original.Category    = dialog.Result.Category;
             original.Quantity    = dialog.Result.Quantity;
@@ -98,8 +91,6 @@ public partial class MainWindow : Window
         }
     }
 
-    // ─── Удалить ─────────────────────────────────────────────────────────────
-
     private async void OnDelete(object? sender, RoutedEventArgs e)
     {
         var selected = ProductGrid.SelectedItem as ProductViewModel;
@@ -109,7 +100,6 @@ public partial class MainWindow : Window
             return;
         }
 
-        // Окно подтверждения
         var confirmed = await ConfirmDialog($"Удалить товар «{selected.Name}»?");
         if (!confirmed) return;
 
@@ -118,8 +108,6 @@ public partial class MainWindow : Window
         RefreshGrid();
         SetStatus($"Товар «{selected.Name}» удалён.");
     }
-
-    // ─── Поиск и фильтрация ──────────────────────────────────────────────────
 
     private void OnSearchChanged(object? sender, TextChangedEventArgs e) => RefreshGrid();
     private void OnFilterChanged(object? sender, SelectionChangedEventArgs e) => RefreshGrid();
@@ -143,8 +131,6 @@ public partial class MainWindow : Window
         UpdateStats();
     }
 
-    // ─── Статистика ──────────────────────────────────────────────────────────
-
     private void UpdateStats()
     {
         TotalCountText.Text = _displayProducts.Count.ToString();
@@ -161,8 +147,6 @@ public partial class MainWindow : Window
     }
 
     private void SetStatus(string message) => StatusText.Text = message;
-
-    // ─── Диалог подтверждения ────────────────────────────────────────────────
 
     private System.Threading.Tasks.Task<bool> ConfirmDialog(string message)
     {
@@ -225,8 +209,6 @@ public partial class MainWindow : Window
         return tcs.Task;
     }
 }
-
-// ─── ViewModel-обёртка для DataGrid ──────────────────────────────────────────
 
 public class ProductViewModel
 {
